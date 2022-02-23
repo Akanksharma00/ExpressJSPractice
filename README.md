@@ -12,3 +12,5 @@ Middleware functions can perform the following tasks:
   <li>End the request-response cycle.</li>
   <li>Call the next middleware in the stack.</li>
 </ul>
+
+<b>body-parser:</b> Express body-parser is an npm library used to process data sent through an HTTP request body. It exposes four express middlewares for parsing text, JSON, url-encoded and raw data set through an HTTP request body. These middlewares are functions that process incoming requests before they reach the target controller.In simple words, the body-parser middleware converts text sent through an HTTP request to a target format.body-parser fails to parse if the content type of the request does match that defined on the route.
