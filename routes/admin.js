@@ -12,10 +12,9 @@ router.get('/add-product',(req, res, next)=>{
 
 router.post('/product',(req,res,next)=>{
     console.log(req.body);
-    res.send(`<p>Order successfully placed for ${req.body.size} ${req.body.title}</p>`);
+    res.send(`<p>Order successfully placed for ${req.body.title}</p>`);
     res.redirect('/');
     
 });
-
 
 module.exports = router;

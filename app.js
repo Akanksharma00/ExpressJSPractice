@@ -9,6 +9,7 @@ const path = require('path');
 //Import my own files
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
+const contactUsRoutes = require('./routes/contactus');
 
 const app = express();
 
@@ -18,6 +19,8 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use(adminRoutes);
 
 app.use(shopRoutes);
+
+app.use(contactUsRoutes);
 
 app.use((req,res,next)=>{
     // res.status(404).send('<h1>Page Not Found!</h1>');
